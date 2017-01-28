@@ -1,0 +1,35 @@
+import "inspectable.idl";
+import "windows.ui.xaml.data.idl";
+
+#define COMP_VERSION 1.0
+
+namespace ValueConverter
+{
+	[uuid(23764889-ffa5-4963-b39b-7ce0d7722b52), version(COMP_VERSION)]
+	interface ISomeData : IInspectable
+		requires Windows.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		[propput] HRESULT Data([in] boolean value);
+		[propget] HRESULT Data([out, retval] boolean * value);
+	}
+
+	[uuid(2cf8140d-e061-411a-8752-df02811a8260), version(COMP_VERSION)]
+	interface IDataConverter: IInspectable
+		requires Windows.UI.Xaml.Data.IValueConverter
+	{
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass SomeData
+	{
+		[default] interface ISomeData;
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass DataConverter
+	{
+		[default] interface IDataConverter;
+	}
+}

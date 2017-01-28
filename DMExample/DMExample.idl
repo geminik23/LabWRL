@@ -1,0 +1,29 @@
+import "inspectable.idl";
+import "windows.ui.xaml.data.idl";
+
+#define COMP_VERSION 1.0
+
+namespace DMExample
+{
+
+	//interface INotifyPropertyChanged;
+	
+	[uuid(0ac93be8-7fd8-403d-be66-63d022c7db34)]
+	[version(COMP_VERSION)]
+	interface ISomeData : IInspectable
+		requires Windows.UI.Xaml.Data.INotifyPropertyChanged
+	{
+		[propput] HRESULT Name([in] HSTRING value);
+		[propget] HRESULT Name([out, retval] HSTRING* value);
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass SomeData
+	{
+		[default] interface ISomeData;
+		//interface INotifyPorpertyChanged;
+	}
+
+
+}
