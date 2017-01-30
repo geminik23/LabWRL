@@ -14,9 +14,10 @@
 		<Grid.RowDefinitions>
 			<RowDefinition Height="auto"/>
 			<RowDefinition Height="auto"/>
+			<RowDefinition Height="auto"/>
 		</Grid.RowDefinitions>
 
-		<CheckBox Grid.Row="0" IsChecked="{Binding Path=Data, Mode=TwoWay}" Content="If check then visible"/>
-		<TextBlock Grid.Row="1" Text="HelloWorld" />
+		<CheckBox x:Name="check" Grid.Row="0" IsChecked="{Binding Path=Data, Mode=TwoWay}" Content="If check then visible"/>
+		<TextBlock x:Name="view" Grid.Row="2" Text="Testing" />
 	</Grid>
 </Page>

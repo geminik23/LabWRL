@@ -22,16 +22,32 @@ namespace ValueConverterTestApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        public MainPage()
+
+		ValueConverter.SomeData data;
+		public MainPage()
         {
 			
 			this.InitializeComponent();
-			var data = new ValueConverter.SomeData();
+			data = new ValueConverter.SomeData();
 			data.Data = false;
+			data.PropertyChanged += Data_PropertyChanged;
 
 			DataContext = data;
 			
-			
+			var binding = new Binding
+			{
+				Source = check,
+				Path = new PropertyPath("IsChecked"),
+				Mode = BindingMode.OneWay,
+				Converter = new ValueConverter.DataConverter(),
+				UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged
+			};
+			BindingOperations.SetBinding(view, TextBlock.VisibilityProperty, binding);
 		}
-    }
+
+		private void Data_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+		{
+			System.Diagnostics.Debug.WriteLine("changed : " + data.Data);
+		}
+	}
 }
