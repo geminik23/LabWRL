@@ -1,0 +1,27 @@
+import "inspectable.idl";
+import "windows.foundation.idl";
+
+
+#define COMP_VERSION 1.0
+
+namespace AsyncComponent
+{
+	
+
+	[uuid(7677941f-3c88-4c10-b585-b154fb1db9de), version(COMP_VERSION)]
+	interface IMathOp: IInspectable
+		requires Windows.Foundation.IAsyncOperation<INT32>
+	{
+		HRESULT Operate([in] INT32 v1,[in] INT32 v2,[out, retval] INT32* v3);
+		HRESULT OperateAsync([in] INT32 v1, [in] INT32 v2, [out, retval] Windows.Foundation.IAsyncOperation<INT32> ** value);
+		HRESULT OperateAndAddAsync([in] INT32 v1, [in] INT32 v2, [in] INT32 v3, 
+								   [out, retval] Windows.Foundation.IAsyncOperation<INT32> ** value);
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass MathOp
+	{
+		[default] interface IMathOp;
+	}
+}

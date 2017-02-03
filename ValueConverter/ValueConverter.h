@@ -4,9 +4,9 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Sat Jan 28 23:14:02 2017
+/* at Tue Jan 31 21:42:33 2017
  */
-/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\ValueConverter.idl-90c2904d:
+/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\ValueConverter.idl-4141753d:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 

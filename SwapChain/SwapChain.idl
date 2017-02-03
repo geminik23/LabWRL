@@ -1,0 +1,21 @@
+import "inspectable.idl";
+
+#define COMP_VERSION 1.0
+
+namespace SwapChain
+{
+
+	[uuid(9181333a-b0fa-4c46-826f-fe66557ad8be), version(COMP_VERSION)]
+	interface IInitSwapChainPanel : IInspectable
+	{
+		HRESULT Initialize([in] IInspectable* panel);
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass InitSwapChainPanel
+	{
+		[default] interface IInitSwapChainPanel;
+	}
+
+}

@@ -1,0 +1,18 @@
+import "inspectable.idl";
+
+#define COMP_VERSION 1.0
+
+namespace CppRT
+{
+	[uuid(30c1594a-fd16-448f-b3d5-b490fe1ee1e0), version(COMP_VERSION)]
+	interface IPageInitializer : IInspectable
+	{
+		HRESULT InitPage([in] IInspectable * page);
+	}
+
+	[version(COMP_VERSION), activatable(COMP_VERSION)]
+	runtimeclass PageInitializer
+	{
+		[default] interface IPageInitializer;
+	}
+}

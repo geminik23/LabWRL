@@ -15,10 +15,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)AsyncOperation.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)CanvasUtilities.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ClosablePtr.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ComArray.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)Constants.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ErrorHandling.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)LifespanTracker.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Map.h" />
@@ -27,7 +25,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)RegisteredEvent.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)ScopeWarden.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Singleton.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)UapApis.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Utilities.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)Vector.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)WinStringBuilder.h" />

@@ -6,7 +6,6 @@
 #include <windows.foundation.h>
 
 using namespace ABI::Windows::UI::Xaml::Data;
-using namespace ABI::Windows::Foundation;
 using namespace Microsoft::WRL;
 using namespace Microsoft::WRL::Wrappers;
 
@@ -24,7 +23,7 @@ public:
 	{
 		ComPtr<IPropertyChangedEventArgsFactory> pArgs;
 
-		GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Data_PropertyChangedEventArgs).Get(), pArgs.GetAddressOf());
+		ABI::Windows::Foundation::GetActivationFactory(HStringReference(RuntimeClass_Windows_UI_Xaml_Data_PropertyChangedEventArgs).Get(), pArgs.GetAddressOf());
 		pArgs->CreateInstance(name,
 							  nullptr,
 							  nullptr,
