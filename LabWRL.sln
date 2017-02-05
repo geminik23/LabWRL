@@ -13,8 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMTestApp", "DMTestApp\DMTe
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ValueConverter", "ValueConverter", "{D65876E5-789F-4FB9-BBBE-9B1292870D8A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "helper", "helper", "{174E1F12-B0EE-41FB-8567-201477F47F76}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FromWin2D", "FromWin2D\FromWin2D.vcxitems", "{7A3BC0ED-4180-4D9A-9B48-26230FAC18EC}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ValueConverter", "ValueConverter\ValueConverter.vcxproj", "{F867DD1F-F7F8-4853-B86F-DD9C53BD99DE}"
@@ -37,12 +35,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SwapChainTest", "SwapChainT
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppRT", "CppRT\CppRT.vcxproj", "{EA800724-0C1C-495A-84FC-4229DF58CE7C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fundamentals", "Fundamentals", "{13D24DA8-CB6C-4599-9D14-004F8AAF1F87}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Fundamentals", "Fundamentals\Fundamentals.vcxproj", "{C672E011-68FA-411F-B555-EB37DA6634B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CppWinRTTestApp", "CppWinRTTestApp\CppWinRTTestApp.csproj", "{6013D209-D94C-4EA1-9421-52A018639FEE}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		WRLBasics\WRLBasics.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
 		WRLBasics\WRLBasics.vcxitems*{6c6a2b41-f4b7-4d1b-8dcd-1d453ddd10a7}*SharedItemsImports = 4
 		FromWin2D\FromWin2D.vcxitems*{7a3bc0ed-4180-4d9a-9b48-26230fac18ec}*SharedItemsImports = 9
 		WRLBasics\WRLBasics.vcxitems*{9ac90a4d-0c8e-48d6-977b-abd94e80e676}*SharedItemsImports = 4
+		WRLBasics\WRLBasics.vcxitems*{c672e011-68fa-411f-b555-eb37da6634b9}*SharedItemsImports = 4
 		FromWin2D\FromWin2D.vcxitems*{dff1dcc9-520c-46ee-ae17-8120091f810c}*SharedItemsImports = 4
 		WRLBasics\WRLBasics.vcxitems*{dff1dcc9-520c-46ee-ae17-8120091f810c}*SharedItemsImports = 4
 		WRLBasics\WRLBasics.vcxitems*{ea800724-0c1c-495a-84fc-4229df58ce7c}*SharedItemsImports = 4
@@ -179,6 +184,34 @@ Global
 		{EA800724-0C1C-495A-84FC-4229DF58CE7C}.Release|x64.Build.0 = Release|x64
 		{EA800724-0C1C-495A-84FC-4229DF58CE7C}.Release|x86.ActiveCfg = Release|Win32
 		{EA800724-0C1C-495A-84FC-4229DF58CE7C}.Release|x86.Build.0 = Release|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Debug|ARM.ActiveCfg = Debug|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Debug|x64.ActiveCfg = Debug|x64
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Debug|x64.Build.0 = Debug|x64
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Debug|x86.ActiveCfg = Debug|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Debug|x86.Build.0 = Debug|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Release|ARM.ActiveCfg = Release|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Release|x64.ActiveCfg = Release|x64
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Release|x64.Build.0 = Release|x64
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Release|x86.ActiveCfg = Release|Win32
+		{C672E011-68FA-411F-B555-EB37DA6634B9}.Release|x86.Build.0 = Release|Win32
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|ARM.Build.0 = Debug|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|ARM.Deploy.0 = Debug|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x64.ActiveCfg = Debug|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x64.Build.0 = Debug|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x64.Deploy.0 = Debug|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x86.ActiveCfg = Debug|x86
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x86.Build.0 = Debug|x86
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Debug|x86.Deploy.0 = Debug|x86
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|ARM.ActiveCfg = Release|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|ARM.Build.0 = Release|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|ARM.Deploy.0 = Release|ARM
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x64.ActiveCfg = Release|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x64.Build.0 = Release|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x64.Deploy.0 = Release|x64
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x86.ActiveCfg = Release|x86
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x86.Build.0 = Release|x86
+		{6013D209-D94C-4EA1-9421-52A018639FEE}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -193,5 +226,7 @@ Global
 		{DFF1DCC9-520C-46EE-AE17-8120091F810C} = {36A9EE7F-A8D3-4A27-9E9E-53F7C2A9FF22}
 		{1EFADEAB-7C73-4220-A8ED-1E21E661A42E} = {36A9EE7F-A8D3-4A27-9E9E-53F7C2A9FF22}
 		{EA800724-0C1C-495A-84FC-4229DF58CE7C} = {FC29A6D1-A804-4A46-9916-66C164B57CD5}
+		{C672E011-68FA-411F-B555-EB37DA6634B9} = {13D24DA8-CB6C-4599-9D14-004F8AAF1F87}
+		{6013D209-D94C-4EA1-9421-52A018639FEE} = {FC29A6D1-A804-4A46-9916-66C164B57CD5}
 	EndGlobalSection
 EndGlobal

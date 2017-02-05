@@ -24,20 +24,21 @@ public:
 
 	STDMETHOD(InitPage)(IInspectable *value)
 	{
-		
+
 		using namespace winrt::Windows::UI::Xaml::Controls;
 		if (value)
 		{
+			
+			winrt::com_ptr<winrt::Windows::IInspectable> pValue;
+			pValue.copy_from(reinterpret_cast<winrt::ABI::Windows::IInspectable *>(value));
+			
+			auto controls = pValue.as<winrt::Windows::UI::Xaml::Controls::IUserControl>();
+
+			Button btn;
+			btn.Content(winrt::Windows::Foundation::PropertyValue::CreateString(L"Testing"));
+			
+			controls.Content(btn);
 		}
-		/*
-		Page page = nullptr;
-
-		winrt::copy_from(page, value);
-
-		Button btn;
-		btn.Content(winrt::Windows::Foundation::PropertyValue::CreateString(L"aaa"));
-
-		page.Content(btn);*/
 
 
 		return S_OK;

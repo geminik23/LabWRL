@@ -1,0 +1,12 @@
+import "inspectable.idl";
+
+namespace Fundamentals
+{
+	// 1. Constructors 
+	// 2. Statics
+	// 3. Overloads
+
+
+
+
+}
