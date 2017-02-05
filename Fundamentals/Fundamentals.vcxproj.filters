@@ -2,10 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClInclude Include="pch.h" />
+    <ClInclude Include="SomeValueCtor.h" />
+    <ClInclude Include="SomeValueStatics.h" />
+    <ClInclude Include="Printing.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Fundamentals.cpp" />
+    <ClCompile Include="SomeValueCtor.cpp" />
+    <ClCompile Include="SomeValueStatics.cpp" />
+    <ClCompile Include="Printing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Midl Include="Fundamentals.idl" />

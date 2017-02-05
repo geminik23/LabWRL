@@ -1,10 +1,90 @@
 import "inspectable.idl";
 
+
+#define COMP_VERSION 1
 namespace Fundamentals
 {
-	// 1. Constructors 
-	// 2. Statics
-	// 3. Overloads
+
+
+	[uuid(b8e4315e-cfab-4c36-b1b3-c2ec13a8df3d)]
+	[version(COMP_VERSION)]
+	interface INone: IInspectable
+	{}
+
+	[uuid(db66358b-1406-4758-96be-74aaa1474eb8)]
+	[version(COMP_VERSION)]
+	interface ISomeValue:IInspectable
+	{
+		[propget] HRESULT Value([out, retval] int *v);
+	}
+
+
+	/* ------------------------------------------CONSTRUCTOR */
+	runtimeclass SomeValueCtor;
+
+
+	[uuid(abf3f366-932e-4c27-a6af-332ec66f910d)]
+	[version(COMP_VERSION)]
+	interface ICtorFactory: IInspectable
+	{
+		HRESULT CreateSomeValueCtorWith([in] int value, 
+										[out, retval] SomeValueCtor ** result);
+	};
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	[activatable(ICtorFactory, COMP_VERSION)]
+	runtimeclass SomeValueCtor
+	{
+		[default] interface ISomeValue;
+	}
+
+
+
+	/* ------------------------------------------STATICS */
+	[uuid(2de26228-832b-4e9f-a971-c137f5f40b30)]
+	[version(COMP_VERSION)]
+	interface ISomeValueStatic : IInspectable 
+	{
+		[propget] HRESULT StaticValue([out, retval]int * value);
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	[static(ISomeValueStatic, COMP_VERSION)]
+	runtimeclass SomeValueStatics
+	{
+		[default] interface INone;
+	}
+
+
+
+	/* -----------------------------------------OVERLOADS */
+	[uuid(382523ff-3a3c-4d52-89ff-0fc4f82bef01)]
+	[version(COMP_VERSION)]
+	interface IPrinting : IInspectable
+	{
+		[propput] HRESULT Value([in] int value);
+		[propget] HRESULT Value([out, retval] int * value);
+
+		[overload("Print")] HRESULT PrintTimes([in] int times);
+		[overload("Print")] HRESULT Print();
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass Printing
+	{
+		[default] interface IPrinting;
+	}
+
+	//[uuid(6f507228-650f-4630-b25a-59b265aaec79)]
+	//[version(COMP_VERSION)]
+	//interface ISomeValues : IInspectable 
+	//{}
+
+
+
 
 
 
