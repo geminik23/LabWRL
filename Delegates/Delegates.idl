@@ -1,0 +1,41 @@
+import "inspectable.idl";
+import "eventtoken.idl";
+import "windows.foundation.idl";
+
+#define COMP_VERSION 1.0
+
+namespace Delegates
+{
+	runtimeclass ValueContainer;
+
+
+	[uuid(3c1d28ae-a3d6-40c5-8a18-a788ec02e264)]
+	[version(COMP_VERSION)]
+	delegate HRESULT ValueChangeHandler(ValueContainer * sender, int value);
+
+	[uuid(4e567139-6dd0-4971-9be1-a436976dba81)]
+	[version(COMP_VERSION)]
+	interface IValueContainer : IInspectable
+	{
+		[propget] HRESULT Value([out,retval] int * v);
+		[propput] HRESULT Value([in] int v);
+
+		[eventadd] HRESULT ValueChanged([in] ValueChangeHandler * handler,
+										[out, retval]EventRegistrationToken * token);
+		[eventremove] HRESULT ValueChanged([in] EventRegistrationToken token);
+
+		[eventadd] HRESULT ValueChanged2([in] Windows.Foundation.TypedEventHandler<ValueContainer*, int> * handler,
+										[out, retval]EventRegistrationToken * token);
+		[eventremove] HRESULT ValueChanged2([in] EventRegistrationToken token);
+
+	}
+
+	[version(COMP_VERSION)]
+	[activatable(COMP_VERSION)]
+	runtimeclass ValueContainer
+	{
+		[default] interface IValueContainer;
+	}
+
+
+}
