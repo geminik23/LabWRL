@@ -1,6 +1,8 @@
 #pragma once
 
+
 #pragma comment(lib,"runtimeobject")
+#include <assert.h>
 #include <wrl.h>
 #include <windows.ui.xaml.data.h>
 #include <windows.foundation.h>
