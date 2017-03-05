@@ -1,0 +1,21 @@
+import "inspectable.idl";
+import "windows.ui.xaml.interop.idl";
+
+#define COMP_VER 1.0
+
+namespace TypeInfoTest
+{
+	[uuid(9d597106-c61a-4852-9b25-4e33fa6f49f1)]
+	[version(COMP_VER)]
+	interface ITypeInfoReceiver : IInspectable
+	{
+		HRESULT Received([in] Windows.UI.Xaml.Interop.TypeName tn);
+	}
+
+	[version(COMP_VER)]
+	[activatable(COMP_VER)]
+	runtimeclass TypeInfoReceiver
+	{
+		[default] interface ITypeInfoReceiver;
+	}
+}
