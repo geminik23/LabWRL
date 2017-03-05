@@ -4,9 +4,9 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Tue Jan 31 22:09:53 2017
+/* at Wed Mar 01 00:48:25 2017
  */
-/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\SwapChain.idl-5bdfe2d5:
+/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\SwapChain.idl-e9a6d520:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 

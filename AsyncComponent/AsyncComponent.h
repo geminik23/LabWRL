@@ -4,9 +4,9 @@
 
 
  /* File created by MIDL compiler version 8.00.0603 */
-/* at Wed Feb 01 14:51:20 2017
+/* at Wed Mar 01 00:49:13 2017
  */
-/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\AsyncComponent.idl-f6767c8a:
+/* Compiler settings for C:\Users\gemin\AppData\Local\Temp\AsyncComponent.idl-d1991a8e:
     Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 8.00.0603 
     protocol : dce , ms_ext, c_ext, robust
     error checks: allocation ref bounds_check enum stub_data 

@@ -18,10 +18,10 @@ class MathOp: public RuntimeClass<IMathOp>
 public:
 
 
-
 	// Inherited via RuntimeClass
 	STDMETHOD(Operate)(INT32 v1, INT32 v2, INT32 * v3)
 	{
+		
 		v2 = std::abs(v2);
 		while (v2-- != 0) v1 += v1;
 		*v3 = v1;
@@ -31,10 +31,11 @@ public:
 
 	STDMETHOD(OperateAsync)(INT32 v1, INT32 v2, __FIAsyncOperation_1_int ** value)
 	{
-		//auto asynop = ::Make<AsyncOperation<INT32>>([=](){
-		//	return v1+v2;
-		//});
-		//asynop.CopyTo(value);
+		/*auto asynop = ::Make<AsyncOperation<INT32>>([=](){
+			return v1+v2;
+		});
+		asynop.CopyTo(value);
+*/
 		return S_OK;
 	}
 
