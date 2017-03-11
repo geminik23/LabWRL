@@ -1,0 +1,9 @@
+import "iinspectable.idl";
+
+
+namespace ManualEvent
+{
+	[uuid()]
+	
+	interface 
+}

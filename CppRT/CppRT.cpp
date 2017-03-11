@@ -10,8 +10,8 @@ using namespace Microsoft::WRL::Wrappers;
 	Difference with other componets
 	1. Metadata_dir -> C:\Program Files (x86)\Windows Kits\10\UnionMetadata
 	2. Target Platform Version -> 10.0.14393.0  NOT 8.1
-
 */
+
 namespace ABI
 {
 namespace CppRT

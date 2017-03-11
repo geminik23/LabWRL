@@ -63,12 +63,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TypeInfo", "TypeInfo", "{4B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeInfoApp", "TypeInfoApp\TypeInfoApp.vcxproj", "{A30D8180-AEF2-4992-9687-418135DCE08A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeInfo", "TypeInfo\TypeInfo.vcxproj", "{133875DC-4F8E-4A07-938B-2A087F90E1CC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TypeInfoTest", "TypeInfo\TypeInfo.vcxproj", "{133875DC-4F8E-4A07-938B-2A087F90E1CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtendPage", "ExtendPage", "{F4555668-1D9E-4626-BC53-C3C84AE0838A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ExtendedPage", "ExtendedPage\ExtendedPage.vcxproj", "{34C6A37A-0725-4068-9ECC-108BAE20DDD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "TestApp\TestApp.csproj", "{84CB6421-5571-42BC-9810-C3486AF036FB}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		FromWin2D\FromWin2D.vcxitems*{133875dc-4f8e-4a07-938b-2a087f90e1cc}*SharedItemsImports = 4
 		WRLBasics\WRLBasics.vcxitems*{133875dc-4f8e-4a07-938b-2a087f90e1cc}*SharedItemsImports = 4
+		FromWin2D\FromWin2D.vcxitems*{34c6a37a-0725-4068-9ecc-108bae20ddd5}*SharedItemsImports = 4
+		WRLBasics\WRLBasics.vcxitems*{34c6a37a-0725-4068-9ecc-108bae20ddd5}*SharedItemsImports = 4
 		WRLBasics\WRLBasics.vcxitems*{45d41acc-2c3c-43d2-bc10-02aa73ffc7c7}*SharedItemsImports = 9
 		WRLBasics\WRLBasics.vcxitems*{6c6a2b41-f4b7-4d1b-8dcd-1d453ddd10a7}*SharedItemsImports = 4
 		FromWin2D\FromWin2D.vcxitems*{7a3bc0ed-4180-4d9a-9b48-26230fac18ec}*SharedItemsImports = 9
@@ -353,6 +361,34 @@ Global
 		{133875DC-4F8E-4A07-938B-2A087F90E1CC}.Release|x64.Build.0 = Release|x64
 		{133875DC-4F8E-4A07-938B-2A087F90E1CC}.Release|x86.ActiveCfg = Release|Win32
 		{133875DC-4F8E-4A07-938B-2A087F90E1CC}.Release|x86.Build.0 = Release|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Debug|ARM.ActiveCfg = Debug|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Debug|x64.ActiveCfg = Debug|x64
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Debug|x64.Build.0 = Debug|x64
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Debug|x86.ActiveCfg = Debug|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Debug|x86.Build.0 = Debug|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Release|ARM.ActiveCfg = Release|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Release|x64.ActiveCfg = Release|x64
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Release|x64.Build.0 = Release|x64
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Release|x86.ActiveCfg = Release|Win32
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5}.Release|x86.Build.0 = Release|Win32
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|ARM.Build.0 = Debug|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x64.ActiveCfg = Debug|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x64.Build.0 = Debug|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x64.Deploy.0 = Debug|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x86.ActiveCfg = Debug|x86
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x86.Build.0 = Debug|x86
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Debug|x86.Deploy.0 = Debug|x86
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|ARM.ActiveCfg = Release|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|ARM.Build.0 = Release|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|ARM.Deploy.0 = Release|ARM
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x64.ActiveCfg = Release|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x64.Build.0 = Release|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x64.Deploy.0 = Release|x64
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x86.ActiveCfg = Release|x86
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x86.Build.0 = Release|x86
+		{84CB6421-5571-42BC-9810-C3486AF036FB}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -377,5 +413,6 @@ Global
 		{F4334E79-7AE3-4D6B-A940-3ED71494DA2E} = {9BE41D55-E481-42BB-9793-CEA051A4C69A}
 		{A30D8180-AEF2-4992-9687-418135DCE08A} = {4B81485E-5D3B-4722-92EA-FAB179056E04}
 		{133875DC-4F8E-4A07-938B-2A087F90E1CC} = {4B81485E-5D3B-4722-92EA-FAB179056E04}
+		{34C6A37A-0725-4068-9ECC-108BAE20DDD5} = {F4555668-1D9E-4626-BC53-C3C84AE0838A}
 	EndGlobalSection
 EndGlobal
